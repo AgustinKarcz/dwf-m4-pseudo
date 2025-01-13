@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Roboto";
+}
+.faq {
+  padding: 32px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+@media (min-width: 960px) {
+  .faq {
+    display: flex;
+  }
+}
+.faq > h2 {
+  font-size: 38px;
+  margin: 0 0 58px;
+}
+@media (min-width: 960px) {
+  .faq > h2 {
+    padding: 30px;
+  }
+}
+.faq-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.faq-item:target .faq-item-text {
+  display: inherit;
+}
+.faq-item-title {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 400;
+}
+.faq-item-title::before {
+  content: ">";
+  color: red;
+  font-size: 40px;
+  font-family: "roboto mono";
+}
+.faq-item-title > a {
+  text-decoration: none;
+}
+.faq-item-title > a:visited {
+  color: inherit;
+}
+.faq-item-text {
+  display: none;
+}
